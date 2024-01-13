@@ -230,6 +230,9 @@ private:
   std::vector<QPixmap> signalImgVector;
 
 protected:
+  QPixmap ic_regenPaddle;
+  void drawBrakeRegen(QPainter &p);
+
   void paintGL() override;
   void initializeGL() override;
   void showEvent(QShowEvent *event) override;
