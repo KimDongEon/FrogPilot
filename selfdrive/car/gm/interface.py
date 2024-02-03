@@ -270,10 +270,10 @@ class CarInterface(CarInterfaceBase):
         ret.flags |= GMFlags.PEDAL_LONG.value
 
     elif candidate == CAR.SILVERADO:
-      ret.mass = 2450.
-      ret.wheelbase = 3.75
+      ret.mass = 1365.
+      ret.wheelbase = 2.7
       ret.steerRatio = 16.3
-      ret.centerToFront = ret.wheelbase * 0.5
+      ret.centerToFront = ret.wheelbase * 0.4
       ret.tireStiffnessFactor = 1.0
       if useGasRegenCmd:
         ret.stopAccel = -0.25
